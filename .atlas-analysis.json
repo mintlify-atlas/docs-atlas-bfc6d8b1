@@ -1,0 +1,138 @@
+{
+  "projectType": "sdk-library",
+  "projectName": "imghash",
+  "projectDescription": "Go library for perceptual image hashing with 18+ algorithms and multiple similarity metrics.",
+  "theme": "palm",
+  "primaryColor": "#3B82F6",
+  "lightColor": "#60A5FA",
+  "darkColor": "#2563EB",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "installation",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/hash-types",
+              "concepts/similarity-metrics",
+              "concepts/interpolation"
+            ]
+          },
+          {
+            "group": "Binary Algorithms",
+            "pages": [
+              "algorithms/pdq",
+              "algorithms/average",
+              "algorithms/difference",
+              "algorithms/median",
+              "algorithms/phash",
+              "algorithms/whash",
+              "algorithms/marrhildreth",
+              "algorithms/blockmean",
+              "algorithms/rash"
+            ]
+          },
+          {
+            "group": "Float64 Algorithms",
+            "pages": [
+              "algorithms/colormoment",
+              "algorithms/zernike",
+              "algorithms/gist",
+              "algorithms/bovw"
+            ]
+          },
+          {
+            "group": "UInt8 Algorithms",
+            "pages": [
+              "algorithms/cld",
+              "algorithms/ehd",
+              "algorithms/lbp",
+              "algorithms/hoghash",
+              "algorithms/radialvariance"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/choosing-algorithm",
+              "guides/comparing-hashes",
+              "guides/examples",
+              "guides/migration"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Core",
+            "pages": [
+              "api/hasher",
+              "api/comparer",
+              "api/hash-types"
+            ]
+          },
+          {
+            "group": "Utilities",
+            "pages": [
+              "api/convenience",
+              "api/similarity"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "18 perceptual hash algorithms (PDQ, Average, PHash, etc.)",
+    "Multiple hash types: Binary, Float64, UInt8",
+    "8 similarity metrics: Hamming, L1, L2, Cosine, Chi-Square, PCC, Jaccard",
+    "Configurable options for each algorithm",
+    "Convenience functions for file and reader operations",
+    "Fast and memory-efficient implementations"
+  ],
+  "publicApiSurface": [
+    "NewPDQ()",
+    "NewAverage()",
+    "NewDifference()",
+    "NewMedian()",
+    "NewPHash()",
+    "NewWHash()",
+    "NewMarrHildreth()",
+    "NewBlockMean()",
+    "NewRASH()",
+    "NewColorMoment()",
+    "NewZernike()",
+    "NewGIST()",
+    "NewBoVW()",
+    "NewCLD()",
+    "NewEHD()",
+    "NewLBP()",
+    "NewHOGHash()",
+    "NewRadialVariance()",
+    "Hasher.Calculate()",
+    "Comparer.Compare()",
+    "HashFile()",
+    "HashReader()",
+    "Compare()",
+    "OpenImage()",
+    "DecodeImage()",
+    "similarity.Hamming()",
+    "similarity.L1()",
+    "similarity.L2()",
+    "similarity.Cosine()",
+    "similarity.ChiSquare()",
+    "similarity.PCC()",
+    "similarity.Jaccard()"
+  ]
+}
