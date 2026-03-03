@@ -19,7 +19,7 @@ Perceptual hashes generate fingerprints based on visual content rather than raw 
 ## Key Features
 
 <CardGroup cols={2}>
-  <Card title="19 Hash Algorithms" icon="fingerprint">
+  <Card title="18 Hash Algorithms" icon="fingerprint">
     From simple Average and Difference hashes to sophisticated PDQ, GIST, and Zernike moments
   </Card>
   <Card title="Multiple Distance Metrics" icon="ruler">
@@ -35,7 +35,7 @@ Perceptual hashes generate fingerprints based on visual content rather than raw 
 
 ## Available Algorithms
 
-imghash provides 19 perceptual hash algorithms, each optimized for different use cases:
+imghash provides 18 perceptual hash algorithms, each optimized for different use cases:
 
 ### Binary Hashes (Hamming Distance)
 
@@ -50,8 +50,6 @@ Fast bit-level comparison using Hamming distance:
 - **BlockMean** - Block-based average hash
 - **PDQ** - Facebook's robust 256-bit hash for content moderation
 - **RASH** - Radial histogram hash
-- **BoVW (SimHash)** - Bag of Visual Words with SimHash encoding
-
 ### Float64 Hashes (L2/Cosine Distance)
 
 Floating-point descriptors for complex visual features:
@@ -59,8 +57,7 @@ Floating-point descriptors for complex visual features:
 - **ColorMoment** - Color distribution moments (L2 distance)
 - **Zernike** - Zernike moments for shape description (L2 distance)
 - **GIST** - Scene descriptor (Cosine distance)
-- **BoVW (Histogram)** - Visual word histogram (Cosine distance)
-- **BoVW (MinHash)** - Locality-sensitive hashing (Jaccard distance)
+- **BoVW** - Bag of Visual Words (supports Histogram/Float64, MinHash/Float64, or SimHash/Binary storage)
 
 ### UInt8 Hashes (L1/L2 Distance)
 
